@@ -1,0 +1,8 @@
+title: "Robotics Project"
+baseurl: ""
+url: ""
+markdown: kramdown
+exclude:
+  - README.md
+
+description: "Project report scaffold for GitHub Pages"
