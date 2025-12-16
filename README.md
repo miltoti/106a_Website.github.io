@@ -19,3 +19,9 @@ If you want, I can:
 - Create a `docs/`-based site instead of deploying via Actions.
 
 Tell me which option you prefer or add your resources and I'll integrate them.
+
+**Published site**
+
+- **URL:** https://miltoti.github.io/106a_Website.github.io/
+
+I added the Pages URL above; update if you prefer a different address.
