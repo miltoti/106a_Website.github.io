@@ -1,7 +1,8 @@
 title: "Robotics Project"
 
 url: "https://miltoti.github.io"
-baseurl: "/106a_Website"
+baseurl: "/106a_Website.github.io"
+theme: jekyll-theme-cayman
 
 markdown: kramdown
 kramdown:
