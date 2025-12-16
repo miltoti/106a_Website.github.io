@@ -1,8 +1,13 @@
 title: "Robotics Project"
-baseurl: ""
-url: ""
+
+url: "https://miltoti.github.io"
+baseurl: "/106a_Website"
+
 markdown: kramdown
-exclude:
-  - README.md
+kramdown:
+  input: kramdown
 
 description: "Project report scaffold for GitHub Pages"
+
+exclude:
+  - README.md
