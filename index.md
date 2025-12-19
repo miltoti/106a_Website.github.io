@@ -4,9 +4,9 @@ title: Home
 permalink: /
 ---
 
-# Robotics Project - Team 37
+# UR7e Plays Word Hunt - Team 37
 
-Welcome to the final report for EECS106A Website. Click on the above to see the following details.
+Welcome to the final report for EECS106A. Click on the above to see details.
 
 ## Presentation slides from Demo 
 

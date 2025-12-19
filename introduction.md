@@ -10,6 +10,8 @@ permalink: /introduction/
 
 The goal of this project is to develop a system in which a UR7e robotic arm autonomously plays the game Word Hunt. Given a grid of letters displayed on a phone, tablet, or piece of paper, the robot will detect the board, recognize individual letters, compute valid word paths by connecting adjacent letters, and physically trace those words on the board using a stylus. The system integrates perception, planning, and control to complete a closed-loop task from visual input to precise physical actuation.
 
+![Word Hunt game board](assets/images/intro_word_hunt.png)
+
 (b) Why is this an interesting project? What interesting problems do you need to solve to make your solution work?
 
 This problem is interesting because it integrates over multiple core robotics domains. Within computer vision and perception, the system must robustly detect the game board and interpret the letters, as well as localize the game board properly using ArUco tags. Under planning, there is an interesting algorithmic challenge in finding the words and executing an efficient algorithm. Finally, the relatively small size of the game board necessitates maintaining both precision and accuracy throughout the whole procedure.
