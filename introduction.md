@@ -12,6 +12,8 @@ The goal of this project is to develop a system in which a UR7e robotic arm auto
 
 ![Word Hunt game board](assets/images/intro_word_hunt.png)
 
+To further explain the game, the image above shows a standard Word Hunt board consisting of a 4×4 grid of letters. Players form words by tracing paths through adjacent letters, where movement is allowed horizontally, vertically, and diagonally, and each letter tile may be used at most once per word. Words are scored based on their length, with longer words earning more points. The objective of the game is to find and trace as many high-scoring words as possible within the time limit.
+
 (b) Why is this an interesting project? What interesting problems do you need to solve to make your solution work?
 
 This problem is interesting because it integrates over multiple core robotics domains. Within computer vision and perception, the system must robustly detect the game board and interpret the letters, as well as localize the game board properly using ArUco tags. Under planning, there is an interesting algorithmic challenge in finding the words and executing an efficient algorithm. Finally, the relatively small size of the game board necessitates maintaining both precision and accuracy throughout the whole procedure.
