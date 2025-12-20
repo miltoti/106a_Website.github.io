@@ -12,7 +12,7 @@ We used a RealSense camera for visual perception, specifically for detecting the
 
 <figure style="text-align: center;">
     <p align="center">
-    <img src="{{ site.baseurl }}/assets/images/implementation/realsense.png" alt="RealSense Camera" style="display: block; margin: 0 auto; width: 50%;">
+    <img src="{{ site.baseurl }}/assets/images/implementation/realsense.png" alt="RealSense Camera" style="display: block; margin: 0 auto; width: 40%;">
     <figcaption>Figure 1: RealSense Camera</figcaption>
     </p>
 </figure>
@@ -21,7 +21,7 @@ The UR7e robotic arm was used for its precise end-effector motion and execution 
 
 <figure style="text-align: center;">
     <p align="center">
-    <img src="{{ site.baseurl }}/assets/images/implementation/ur7e.png" alt="UR7e Robotic Arm" style="display: block; margin: 0 auto; width: 50%;">
+    <img src="{{ site.baseurl }}/assets/images/implementation/ur7e.png" alt="UR7e Robotic Arm" style="display: block; margin: 0 auto; width: 20%;">
     <figcaption>Figure 2: UR7e Robotic Arm</figcaption>
     </p>
 </figure>
@@ -30,7 +30,7 @@ We engineered a pencil holder that used rubber bands attached to the back of the
 
 <figure style="text-align: center;">
     <p align="center">
-    <img src="{{ site.baseurl }}/assets/images/implementation/stylus.png" alt="Stylus" style="display: block; margin: 0 auto; width: 50%;">
+    <img src="{{ site.baseurl }}/assets/images/implementation/stylus.png" alt="Stylus" style="display: block; margin: 0 auto; width: 20%;">
     <figcaption>Figure 3: Stylus inside Pencil Holder</figcaption>
     </p>
 </figure>
