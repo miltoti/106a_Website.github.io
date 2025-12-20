@@ -8,7 +8,42 @@ permalink: /implementation/
 
 ## (a) Describe any hardware you used or built. Illustrate with pictures and diagrams.
 
-## (b) What parts did you use to build your solution?
+We used a RealSense camera for visual perception, specifically for detecting the two ArUco tags and capturing the image of the game board.
+
+<figure style="text-align: center;">
+    <p align="center">
+    <img src="{{ site.baseurl }}/assets/images/implementation/realsense.png" alt="RealSense Camera" style="display: block; margin: 0 auto; width: 50%;">
+    <figcaption>Figure 1: RealSense Camera</figcaption>
+    </p>
+</figure>
+
+The UR7e robotic arm was used for its precise end-effector motion and execution of tracing valid word paths on the iPad screen. We were also able to increase the speed of the arm to achieve higher scores in the game.
+
+<figure style="text-align: center;">
+    <p align="center">
+    <img src="{{ site.baseurl }}/assets/images/implementation/ur7e.png" alt="UR7e Robotic Arm" style="display: block; margin: 0 auto; width: 50%;">
+    <figcaption>Figure 2: UR7e Robotic Arm</figcaption>
+    </p>
+</figure>
+
+We engineered a pencil holder that used rubber bands attached to the back of the stylus to ensure that the tip pressed against the screen with a roughly consistent amount of pressure while still being held securely in place. This worked well because it made the system more tolerant to small positioning errors and prevented the stylus from pressing too hard on the screen, which could have damaged the iPad.
+
+<figure style="text-align: center;">
+    <p align="center">
+    <img src="{{ site.baseurl }}/assets/images/implementation/stylus.png" alt="Stylus" style="display: block; margin: 0 auto; width: 50%;">
+    <figcaption>Figure 3: Stylus inside Pencil Holder</figcaption>
+    </p>
+</figure>
+
+## (b) What parts did you use to build your solution?\
+
+- UR7e robotic arm
+- Robotiq gripper (UR7e end effector)
+- RealSense camera with stand
+- iPad
+- Apple pencil/stylus
+- Custom (3D printed) pencil holder (plus rubber bands)
+- Two ArUco tags
 
 ## (c) Describe any software you wrote in detail (launch files, URDFs, scripts). Include diagrams and flow charts.
 
@@ -37,7 +72,7 @@ To improve stability, the transformed point is smoothed using a running average.
     <p align="center">
     <img src="{{ site.baseurl }}/assets/images/implementation/pose_estimation.png" alt="Pose Estimation" style="display: block; margin: 0 auto; width: 50%;">
     <!-- <img src="assets/images/implementation/pose_estimation.png" alt="Pose Estimation" style="width: 30%;"> -->
-    <figcaption>Figure 1: Pose estimation pipeline</figcaption>
+    <figcaption>Figure 4: Pose estimation pipeline</figcaption>
     </p>
 </figure>
 
