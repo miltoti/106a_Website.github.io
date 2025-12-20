@@ -26,8 +26,6 @@ Code found here: [https://github.com/bbokycom/ur7e_plays_word_hunt](https://gith
   Download Apple pencil holder STL
 </a>
 
-## (c) Data sheets for components used in your system
-
-## (d) Any additional videos, images, or data from your finished solution
+## (c) Additional videos, images, or data from your finished solution
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/i3llYZd1tus" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
