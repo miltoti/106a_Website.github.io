@@ -53,8 +53,6 @@ Another design choice involved the stylus setup process. We manually held the st
 
 ## (d) How do these design choices impact robustness, durability, and efficiency?
 
-> Place diagrams and photos here.
-
 While these design choices were efficient and allowed the game to run smoothly, the process of recalibrating arm position, adjusting offsets, and manually inserting the pen within the UR7e's gripper definitely added more time to the setup process. If we had more time, we would improve the robustness and durability of our system so that we would not need to include these manual processes while setting up the game.
 <div style="display: flex; justify-content: space-around; align-items: flex-start;">
     <figure style="width: 30%; text-align: center;">
