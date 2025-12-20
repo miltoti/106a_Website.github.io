@@ -12,7 +12,7 @@ We used a RealSense camera for visual perception, specifically for detecting the
 
 <figure style="text-align: center;">
     <p align="center">
-    <img src="{{ site.baseurl }}/assets/images/implementation/realsense.png" alt="RealSense Camera" style="display: block; margin: 0 auto; width: 40%;">
+    <img src="{{ site.baseurl }}/assets/images/implementation/realsense.png" alt="RealSense Camera" style="display: block; margin: 0 auto; width: 30%;">
     <figcaption>Figure 1: RealSense Camera</figcaption>
     </p>
 </figure>
@@ -30,7 +30,7 @@ We engineered a pencil holder that used rubber bands attached to the back of the
 
 <figure style="text-align: center;">
     <p align="center">
-    <img src="{{ site.baseurl }}/assets/images/implementation/stylus.png" alt="Stylus" style="display: block; margin: 0 auto; width: 20%;">
+    <img src="{{ site.baseurl }}/assets/images/implementation/stylus.png" alt="Stylus" style="display: block; margin: 0 auto; width: 10%;">
     <figcaption>Figure 3: Stylus inside Pencil Holder</figcaption>
     </p>
 </figure>
@@ -163,4 +163,4 @@ Putting the whole process together, we get the following step-by-step procedure:
 9. **Timed Termination**  
     The execution loop runs until the Word Hunt game timer expires, at which point the system automatically stops after approximately 80 seconds.
 
-> Add code links and files in the `Additional Materials` page later.
+<!-- > Add code links and files in the `Additional Materials` page later. -->
