@@ -33,6 +33,5 @@ permalink: /team/
     Worked on the perception pipeline, implementing the ArUco tag localization, board detection and rectification, and letter inference using Qwen API. Also contributed to creating, testing, and refining the main execution loop of the robot.
 
 - **Isaac Tsang**  
-    _TODO: add contributions._
-
+    Created the website for the final project presentation. Also contributed in testing and verifying the robot movements using markers, and eventually ensuring the robot can interact with the iPad safely without damaging the device.
 <!-- > Add member photos and links if desired. -->
