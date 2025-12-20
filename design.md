@@ -44,8 +44,21 @@ The detected letters are converted into a 4×4 2D array and passed into our Word
 
 ## (c) What design choices did you make when you formulated your design? What trade-offs did you have to make?
 
+We used two ArUco tags in our design, with one located at the base of the UR7e and one placed on the table right next to the iPad with the game board. This was effective because by detecting the positions of these tags, we were able get the position of the iPad in the robot's frame, and thus precisely calculate coordinates for the game board. However, because our RealSense camera was placed in front of this entire setup, the one disadvantage of this approach was that we had to step out of frame and make sure to not accidentally the ArUco tag when the system was trying to compute the position of the iPad.
+
+When we formulated our design, we decided to include a calibration step in which we manually adjusted the arm using small offsets so that the pencil would be positioned just above the top-left square. This step was necessary because the camera was placed slightly differently each time the system was set up, causing previously hard-coded offsets to become inaccurate. As a result, the system had to be recalibrated whenever the camera was repositioned. While effective, this approach added an extra step and increased the setup time before the game could begin.
+
+Another design choice involved the stylus setup process. We manually held the stylus and ran a toggle grip command so that the UR7e’s gripper could grasp the pen. This worked well because the stylus needed to point downward toward the iPad, and there was no practical way for it to stand on its own before the game started. However, this method introduced some inconsistency due to human error, as the gripper would occasionally grasp the stylus at a slight angle.
 
 
 ## (d) How do these design choices impact robustness, durability, and efficiency?
 
 > Place diagrams and photos here.
+
+While these design choices were efficient and allowed the game to run smoothly, the process of recalibrating arm position, adjusting offsets, and manually inserting the pen within the UR7e's gripper definitely added more time to the setup process. If we had more time, we would improve the robustness and durability of our system so that we would not need to include these manual processes while setting up the game.
+<div style="display: flex; justify-content: space-around; align-items: flex-start;">
+    <figure style="width: 30%; text-align: center;">
+        <figcaption style="margin-bottom: 8px;">Game Setup</figcaption>
+        <img src="{{ site.baseurl }}/assets/images/design/setup.png" alt="Game Setup" style="width: 90%;">
+    </figure>
+</div>
