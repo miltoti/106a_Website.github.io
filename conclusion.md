@@ -6,11 +6,11 @@ permalink: /conclusion/
 
 # 5. Conclusion
 
-(a) Discuss your results. How well did your finished solution meet your design criteria?
+## (a) Discuss your results. How well did your finished solution meet your design criteria?
 
 Ultimately, we were able to fully implement end-to-end our criteria. We were able to accurately and consistently detect the ArUco tags, the Word Hunt board, and the letters within the board. The project also included correct and effective implementation of the Word Hunt finding algorithm. Finally, the robot was able to precisely move to all the paths and draw out all the word paths as needed. Overall, the project was a success and met all of our initial criteria.
 
-(b) Did you encounter any particular difficulties?
+## (b) Did you encounter any particular difficulties?
 
 We encountered a few difficulties during the project. One major issue we noticed was that when outputting the `ipad_point_base` position, the values would often fluctuate by around a centimeter each time the robot was commanded to move to that point. In principle, each time we ran the main script, the robot was supposed to move to a position just above the top-left tile of the Word Hunt board. In practice, however, the robot would consistently be offset by about a centimeter, which made completing the project infeasible.
 
@@ -22,7 +22,7 @@ One final challenge involved how to physically hold the pencil or stylus using t
 
 To solve this, we designed and built a custom pencil holder that could apply a roughly constant downward pressure while still allowing for tolerance in the z-direction. The holder used grooves and rubber bands positioned behind the stylus to ensure that the tip consistently pressed against the screen with approximately the same force. At the same time, the design allowed the pencil to move upward by a few centimeters when additional force was applied, preventing excessive pressure. This amount of tolerance was sufficient for our level of precision, and the resulting pencil holder proved to be a reliable and effective solution.
 
-(c) Does your solution have any flaws or hacks? What improvements would you make with more time?
+## (c) Does your solution have any flaws or hacks? What improvements would you make with more time?
 
 Our solution does include a few hacky parts that we used to make the system reliable within the project constraints and timeline.
 

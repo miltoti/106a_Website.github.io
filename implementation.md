@@ -6,11 +6,11 @@ permalink: /implementation/
 
 # 3. Implementation
 
-(a) Describe any hardware you used or built. Illustrate with pictures and diagrams.
+## (a) Describe any hardware you used or built. Illustrate with pictures and diagrams.
 
-(b) What parts did you use to build your solution?
+## (b) What parts did you use to build your solution?
 
-(c) Describe any software you wrote in detail (launch files, URDFs, scripts). Include diagrams and flow charts.
+## (c) Describe any software you wrote in detail (launch files, URDFs, scripts). Include diagrams and flow charts.
 
 Our software stack is built roughly on top of the Lab 7 ROS2 codebase, reusing its UR7e control interface, TF setup, and MoveIt-based motion execution. On top of this foundation, we implemented several custom ROS nodes and planning scripts to handle ArUco-based localization, coordinate transformations, vision processing, word planning, and execution control.
 
@@ -73,7 +73,7 @@ The solver enumerates all valid words under Word Hunt adjacency constraints and 
 
 The robot iterates through the planned word paths, tracing each word sequentially by moving the end effector down to contact the screen, following the path, and lifting at the end of each word. The execution loop is time-limited, and the system automatically stops after approximately 80 seconds to match the duration of the Word Hunt game.
 
-(d) How does your complete system work? Describe each step.
+## (d) How does your complete system work? Describe each step.
 
 Putting the whole process together, we get the following step-by-step procedure:
 1. **ArUco Detection and Localization**  
