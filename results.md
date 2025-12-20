@@ -15,3 +15,6 @@ In terms of gameplay performance, the robot achieved an average score of over 20
 ## (b) Illustrate with pictures and at least one video.
 
 > Drop image/video files into an `assets` or `media` folder and reference them here.
+
+**Demo Video**
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/i3llYZd1tus" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
