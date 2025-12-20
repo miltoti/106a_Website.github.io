@@ -8,7 +8,9 @@ permalink: /additional-materials/
 
 ## (a) Code, URDFs, and launch files you wrote
 
-
+<a href="assets/downloads/UR7e%20Apple%20Pencil%20Holder.stl" download>
+  Download Apple pencil holder STL
+</a>
 
 ## (b) CAD models for any hardware you designed
 
