@@ -15,7 +15,6 @@ permalink: /additional-materials/
 | `/src/planning/planning/main.py` | The core logic of the program: moving to start position, running the perception pipeline, executing the game actions. |
 | `/src/planning/planning/transform_ipad_pose.py` | Transforms the `ipad_point` into `ipad_point_base` which is just the point but in `base_link` |
 | `/src/planning/planning/wordhunt.py` | The DFS + backtracking algorithm that takes in the letters in the grid and returns the found words and paths. |
-| `/src/planning/planning/wordhunt.py` | The DFS + backtracking algorithm that takes in the letters in the grid and returns the found words and paths. |
 | `/src/perception/perception/process_pointcloud.py` | Takes in `aruco_markers` and outputs `ipad_point` which is the point right above the ipad relative to the table ArUco tag. |
 
 Code found here: [https://github.com/bbokycom/ur7e_plays_word_hunt](https://github.com/bbokycom/ur7e_plays_word_hunt).
@@ -28,4 +27,5 @@ Code found here: [https://github.com/bbokycom/ur7e_plays_word_hunt](https://gith
 
 ## (c) Additional videos, images, or data from your finished solution
 
+**Demo Videos**
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/i3llYZd1tus" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
