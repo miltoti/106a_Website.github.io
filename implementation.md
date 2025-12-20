@@ -35,7 +35,7 @@ We engineered a pencil holder that used rubber bands attached to the back of the
     </p>
 </figure>
 
-## (b) What parts did you use to build your solution?\
+## (b) What parts did you use to build your solution?
 
 - UR7e robotic arm
 - Robotiq gripper (UR7e end effector)
@@ -108,7 +108,7 @@ For letter recognition, we implemented a module that sends the rectified board i
     <p align="center">
     <img src="{{ site.baseurl }}/assets/images/implementation/perception_pipeline.png" alt="Perception Pipeline" style="display: block; margin: 0 auto; width: 60%;">
     <!-- <img src="assets/images/implementation/perception_pipeline.png" alt="Perception Pipeline" style="width: 30%;"> -->
-    <figcaption>Figure 2: Perception Pipeline</figcaption>
+    <figcaption>Figure 5: Perception Pipeline</figcaption>
     </p>
 </figure>
 
@@ -124,7 +124,7 @@ The solver enumerates all valid words under Word Hunt adjacency constraints and 
     <p align="center">
     <img src="{{ site.baseurl }}/assets/images/implementation/dfs.png" alt="Word Hunt Solver" style="display: block; margin: 0 auto; width: 60%;">
     <!-- <img src="assets/images/implementation/dfs.png" alt="Word Hunt Solver" style="width: 30%;"> -->
-    <figcaption>Figure 3: Word Hunt Solver</figcaption>
+    <figcaption>Figure 6: Word Hunt Solver</figcaption>
     </p>
 </figure>
 
