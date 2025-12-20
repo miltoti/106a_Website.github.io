@@ -34,8 +34,8 @@ We implemented a separate node, `transform_ipad_point`, which is responsible for
 To improve stability, the transformed point is smoothed using a running average. The point is also shifted upward along the z-axis to define a safe approach height above the iPad surface. The final transformed point is published as `/ipad_point_base` and serves as the target reference for robot motion.
 
 <figure style="text-align: center;">
-    <img src="{{ site.baseurl }}/assets/images/implementation/pose_estimation.png" alt="Pose Estimation" style="width: 30%;">
-    <!-- <img src="assets/images/implementation/pose_estimation.png" alt="Pose Estimation" style="width: 30%;"> -->
+    <!-- <img src="{{ site.baseurl }}/assets/images/implementation/pose_estimation.png" alt="Pose Estimation" style="width: 30%;"> -->
+    <img src="assets/images/implementation/pose_estimation.png" alt="Pose Estimation" style="width: 30%;">
     <figcaption>Figure 1: Pose estimation pipeline</figcaption>
 </figure>
 
@@ -67,6 +67,12 @@ The rectified board image is then resized and passed to an LLM-based inference p
 
 For letter recognition, we implemented a module that sends the rectified board image to a Qwen multimodal LLM through an API call. The model is prompted to return exactly 16 capital letters corresponding to the board, ordered left-to-right and top-to-bottom. The system retries inference multiple times if the returned output does not meet formatting requirements.
 
+<figure style="text-align: center;">
+    <!-- <img src="{{ site.baseurl }}/assets/images/implementation/perception_pipeline.png" alt="Perception Pipeline" style="width: 30%;"> -->
+    <img src="assets/images/implementation/perception_pipeline.png" alt="Perception Pipeline" style="width: 30%;">
+    <figcaption>Figure 2: Perception Pipeline</figcaption>
+</figure>
+
 **Word Hunt Solver and Path Conversion**
 
 We implemented a Word Hunt solver using depth-first search (DFS) with backtracking and a trie-based dictionary. At a high level, the solver starts from each letter on the board and explores all possible paths by recursively moving to adjacent letters (including diagonals). Depth-first search allows the algorithm to follow one potential word path as far as possible before exploring alternatives. Backtracking is used to undo steps when a path can no longer form a valid word, ensuring that each letter is only used once per word while allowing it to be reused across different paths.
@@ -74,6 +80,13 @@ We implemented a Word Hunt solver using depth-first search (DFS) with backtracki
 To efficiently check whether a partial letter sequence could form a valid word, we use a trie, which is a tree-like data structure that stores the dictionary. Each level of the trie corresponds to the next letter in a word, allowing the solver to quickly determine whether a given prefix is valid. If a partial path does not match any prefix in the trie, the search along that path is terminated early, significantly reducing the search space.
 
 The solver enumerates all valid words under Word Hunt adjacency constraints and stores all possible paths for each word. The resulting words are then sorted by length to prioritize higher-scoring words. Each path, initially represented as grid indices, is converted into continuous (x, y) coordinates relative to the iPad reference point in the robot’s base_link frame. These coordinates define the tracing trajectory for each word.
+
+<figure style="text-align: center;">
+    <!-- <img src="{{ site.baseurl }}/assets/images/implementation/dfs.png" alt="Word Hunt Solver" style="width: 30%;"> -->
+    <img src="assets/images/implementation/dfs.png" alt="Word Hunt Solver" style="width: 30%;">
+    <figcaption>Figure 3: Word Hunt Solver</figcaption>
+</figure>
+
 
 **Execution Loop and Timing Control**
 
