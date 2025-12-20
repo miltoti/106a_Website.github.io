@@ -33,6 +33,12 @@ We implemented a separate node, `transform_ipad_point`, which is responsible for
 
 To improve stability, the transformed point is smoothed using a running average. The point is also shifted upward along the z-axis to define a safe approach height above the iPad surface. The final transformed point is published as `/ipad_point_base` and serves as the target reference for robot motion.
 
+<figure style="text-align: center;">
+    <img src="{{ site.baseurl }}/assets/images/implementation/pose_estimation.png" alt="Pose Estimation" style="width: 30%;">
+    <!-- <img src="assets/images/implementation/pose_estimation.png" alt="Pose Estimation" style="width: 30%;"> -->
+    <figcaption>Figure 1: Pose estimation pipeline</figcaption>
+</figure>
+
 **Main Control and Execution Node**
 
 The main execution logic is implemented in a custom node derived from the Lab 7 control framework. This node integrates perception, planning, and actuation and runs its high-level workflow in a separate thread to avoid blocking ROS callbacks.
