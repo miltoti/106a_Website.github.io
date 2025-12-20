@@ -24,7 +24,7 @@ permalink: /team/
 (b) Describe the major contributions of each team member.
 
 - **Brandon Huang**  
-    Implemented the word search algorithm, which involved depth-first search (DFS) + backtracking and determining valid word paths. Also contributed to testing and refining the robot's sequence of movements in main execution loop.
+    Implemented the word search algorithm, which involved depth-first search (DFS) + backtracking and determining valid word paths. Also contributed to testing and refining the robot's sequence of joint movements in main execution loop.
 
 - **Atri Shankar**  
     Designed 3D printed holder for Apple pencil, which allowed UR7e to draw on the iPad with precision and pressure. Aided in creating software framework for gripper movement. Contributed to physical setup and testing of robot software and parts. 
