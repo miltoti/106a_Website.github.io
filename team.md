@@ -35,4 +35,4 @@ permalink: /team/
 - **Isaac Tsang**  
     _TODO: add contributions._
 
-> Add member photos and links if desired.
+<!-- > Add member photos and links if desired. -->

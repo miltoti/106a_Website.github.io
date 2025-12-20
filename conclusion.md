@@ -22,7 +22,12 @@ One final challenge involved how to physically hold the pencil or stylus using t
 
 To solve this, we designed and built a custom pencil holder that could apply a roughly constant downward pressure while still allowing for tolerance in the z-direction. The holder used grooves and rubber bands positioned behind the stylus to ensure that the tip consistently pressed against the screen with approximately the same force. At the same time, the design allowed the pencil to move upward by a few centimeters when additional force was applied, preventing excessive pressure. This amount of tolerance was sufficient for our level of precision, and the resulting pencil holder proved to be a reliable and effective solution.
 
-<!-- <img src="assets/images/pencil_holder_top.JPG" alt="Apple pencil holder" width="500"> -->
+<figure style="text-align: center;">
+    <p align="center">
+    <img src="{{ site.baseurl }}/assets/images/pencil_holder_top.JPG" alt="Apple pencil holder" style="display: block; margin: 0 auto; width: 30%;">
+    <figcaption>Apple pencil holder</figcaption>
+    </p>
+</figure>
 
 ## (c) Does your solution have any flaws or hacks? What improvements would you make with more time?
 
