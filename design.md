@@ -16,20 +16,19 @@ The desired functionality of the project is for the robot to, given a Word Hunt 
 <div style="display: flex; justify-content: space-around; align-items: flex-start;">
     <figure style="width: 30%; text-align: center;">
         <figcaption style="margin-bottom: 8px;">Sensing</figcaption>
-        <img src="{{ site.baseurl }}/assets/images/design/sensing.png" alt="Sensing" style="width: 30%;">
+        <img src="{{ site.baseurl }}/assets/images/design/sensing.png" alt="Sensing" style="width: 90%;">
         <!-- <img src="assets/images/design/sensing.png" alt="Sensing" style="width: 100%;"> -->
     </figure>
     <figure style="width: 30%; text-align: center;">
         <figcaption style="margin-bottom: 8px;">Planning</figcaption>
-        <img src="{{ site.baseurl }}/assets/images/design/planning.png" alt="Planning" style="width: 30%;">
+        <img src="{{ site.baseurl }}/assets/images/design/planning.png" alt="Planning" style="width: 90%;">
         <!-- <img src="assets/images/design/planning.png" alt="Planning" style="width: 100%;"> -->
     </figure>
     <figure style="width: 30%; text-align: center;">
         <figcaption style="margin-bottom: 8px;">Actuation</figcaption>
         <!-- <img src="assets/images/design/actuation.png" alt="Actuation" style="width: 100%;"> -->
-        <img src="{{ site.baseurl }}/assets/images/design/actuation.png" alt="Actuation" style="width: 30%;">
+        <img src="{{ site.baseurl }}/assets/images/design/actuation.png" alt="Actuation" style="width: 90%;">
     </figure>
-</div>
 </div>
 
 

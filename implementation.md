@@ -34,9 +34,11 @@ We implemented a separate node, `transform_ipad_point`, which is responsible for
 To improve stability, the transformed point is smoothed using a running average. The point is also shifted upward along the z-axis to define a safe approach height above the iPad surface. The final transformed point is published as `/ipad_point_base` and serves as the target reference for robot motion.
 
 <figure style="text-align: center;">
-    <img src="{{ site.baseurl }}/assets/images/implementation/pose_estimation.png" alt="Pose Estimation" style="width: 30%;">
+    <p align="center">
+    <img src="{{ site.baseurl }}/assets/images/implementation/pose_estimation.png" alt="Pose Estimation" style="display: block; margin: 0 auto; width: 50%;">
     <!-- <img src="assets/images/implementation/pose_estimation.png" alt="Pose Estimation" style="width: 30%;"> -->
     <figcaption>Figure 1: Pose estimation pipeline</figcaption>
+    </p>
 </figure>
 
 **Main Control and Execution Node**
@@ -68,9 +70,11 @@ The rectified board image is then resized and passed to an LLM-based inference p
 For letter recognition, we implemented a module that sends the rectified board image to a Qwen multimodal LLM through an API call. The model is prompted to return exactly 16 capital letters corresponding to the board, ordered left-to-right and top-to-bottom. The system retries inference multiple times if the returned output does not meet formatting requirements.
 
 <figure style="text-align: center;">
-    <img src="{{ site.baseurl }}/assets/images/implementation/perception_pipeline.png" alt="Perception Pipeline" style="width: 30%;">
+    <p align="center">
+    <img src="{{ site.baseurl }}/assets/images/implementation/perception_pipeline.png" alt="Perception Pipeline" style="display: block; margin: 0 auto; width: 60%;">
     <!-- <img src="assets/images/implementation/perception_pipeline.png" alt="Perception Pipeline" style="width: 30%;"> -->
     <figcaption>Figure 2: Perception Pipeline</figcaption>
+    </p>
 </figure>
 
 **Word Hunt Solver and Path Conversion**
@@ -82,9 +86,11 @@ To efficiently check whether a partial letter sequence could form a valid word, 
 The solver enumerates all valid words under Word Hunt adjacency constraints and stores all possible paths for each word. The resulting words are then sorted by length to prioritize higher-scoring words. Each path, initially represented as grid indices, is converted into continuous (x, y) coordinates relative to the iPad reference point in the robot’s base_link frame. These coordinates define the tracing trajectory for each word.
 
 <figure style="text-align: center;">
-    <img src="{{ site.baseurl }}/assets/images/implementation/dfs.png" alt="Word Hunt Solver" style="width: 30%;">
+    <p align="center">
+    <img src="{{ site.baseurl }}/assets/images/implementation/dfs.png" alt="Word Hunt Solver" style="display: block; margin: 0 auto; width: 60%;">
     <!-- <img src="assets/images/implementation/dfs.png" alt="Word Hunt Solver" style="width: 30%;"> -->
     <figcaption>Figure 3: Word Hunt Solver</figcaption>
+    </p>
 </figure>
 
 
