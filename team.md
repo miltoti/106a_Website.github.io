@@ -24,7 +24,6 @@ permalink: /team/
 (b) Describe the major contributions of each team member.
 
 - **Brandon Huang**  
-    _TODO: add contributions._
     Implemented the word search algorithm, which involved depth-first search (DFS) + backtracking and determining valid word paths. Also contributed to testing and refining the robot's sequence of movements in main execution loop.
 
 - **Atri Shankar**  
