@@ -29,7 +29,6 @@ In terms of gameplay performance, the robot achieved an average score of over 20
 </figure>
 
 **Demo Videos**
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/i3llYZd1tus" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/UU3w-ol8Epg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/Ltj93MJJzLQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/FvokpooJG04" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
